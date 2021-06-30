@@ -97,8 +97,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 25vh;
     padding: 0 1rem;
+    min-height: 24vh;
     text-align: center;
 }
 
