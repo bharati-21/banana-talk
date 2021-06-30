@@ -59,10 +59,11 @@ body {
 
 .main {
     padding: 2rem;
-    min-height: 65vh;
+    min-height: 70vh;
 }
 
 .main > .container {
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +99,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    min-height: 24vh;
+    min-height: 20vh;
     text-align: center;
 }
 
