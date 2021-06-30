@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+:root {
+    --primary-color: #F2C94C;
+    --dark-gray-color: #333;
+    --off-white-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    min-width: 300px;
+}
+
+.bg-yellow {
+    background-color: var(--primary-color);
+    color: var(--dark-gray-color);
+}
+
+.bg-off-white {
+    background-color: var(--off-white-color);
+}
+
+.btn {
+    display: block;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.btn-yellow {
+    background-color: var(--primary-color);
+    color: var(--dark-gray-color);
+}
+
+.hero {
+    min-height: 15vh;
+    padding: 2rem 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.main {
+    padding: 2rem;
+    min-height: 65vh;
+}
+
+.main > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main textarea {
+    overflow: scroll;
+    width: 100%;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.main h3 {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+#user-text {
+    min-height: 25vh;
+}
+
+#banana-text {
+    min-height: 15vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footer-lead {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
