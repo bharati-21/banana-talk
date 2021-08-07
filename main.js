@@ -9,31 +9,19 @@ var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 btnTranslate.addEventListener("click", btnTranslateClick);
 function btnTranslateClick(e) {
-  bananaText.innerHTML = "";
   e.preventDefault();
 
-  console.log(userText.value);
-  let text = userText.value;
-  // if(text.indexOf("\n")!==-1) {
-  //   text = text.split("\n");
-  //   console.log(text);
-  //   for(let line in text) {
-  //     fetchFromURL(line);
-  //   }
-  // }
-  // else {
-    fetchFromURL(text);
-  // }
+  let text = userText.value; 
+  fetchFromURL(text);
 }
 
 function fetchFromURL(text) {
   fetch(getTranslationURL(text))
     .then((response) => {
-      console.log(response);
-      response.json()
+      return response.json()
     })
     .then((json) => {
-      bananaText.innerHTML += json.contents.translated;
+      bananaText.innerText = json.contents.translated;
     })
     .catch((err) => {
       console.log("error occurred " + err)
