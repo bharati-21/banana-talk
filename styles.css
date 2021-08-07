@@ -21,7 +21,7 @@ body {
 .container {
     max-width: 960px;
     margin: auto;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 .bg-yellow {
@@ -35,7 +35,7 @@ body {
 
 .btn {
     display: block;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem auto 2rem auto;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border-radius: 0.5rem;
@@ -43,11 +43,24 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-style: italic;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .btn-yellow {
     background-color: var(--primary-color);
     color: var(--dark-gray-color);
+}
+
+
+.btn-dark {
+    color: var(--primary-color);
+    background-color: var(--dark-gray-color);
 }
 
 .hero {
@@ -60,6 +73,7 @@ body {
 .main {
     padding: 2rem;
     min-height: 70vh;
+    background: url('https://static.onecms.io/wp-content/uploads/sites/13/2015/10/16/despicable_me_2_minions-1920x1080-1.jpg') no-repeat center center/ contain;
 }
 
 .main > .container {
@@ -69,6 +83,10 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
+/* form.translate-form {
+    backdrop-filter: blur(2px);
+} */
 
 .main textarea {
     overflow: scroll;
@@ -80,9 +98,17 @@ body {
     padding: 1rem;
 }
 
-.main h3 {
+.main h3.section-head {
     font-style: italic;
     margin-bottom: 0.75rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    /* background-color: var(--dark-gray-color); */
+    /* color: var(--primary-color); */
+    background-color: var(--off-white-color);
+    box-shadow: 0px 0px 10px 2px var(--dark-gray-color);
 }
 
 #user-text {
@@ -110,6 +136,6 @@ body {
 }
 
 .footer-lead {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
 }
