@@ -28,10 +28,14 @@ Live demo of the application: https://bharati-banana-talk.netlify.app/
 ## URL of the API
 https://api.funtranslations.com/translate/minion.json?text=textToBeTranslated
 
+<hr />
+
 ## My Learnings
 - Callbacks
 - Promises
 - Fetch API requests
+
+<hr />
 
 ## Challenges
 - Translating multiline text inputs from the user.
