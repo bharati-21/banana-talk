@@ -73,7 +73,9 @@ body {
 .main {
     padding: 2rem;
     min-height: 70vh;
-    background: url('https://static.onecms.io/wp-content/uploads/sites/13/2015/10/16/despicable_me_2_minions-1920x1080-1.jpg') no-repeat center center/ contain;
+    /* background: url('https://static.onecms.io/wp-content/uploads/sites/13/2015/10/16/despicable_me_2_minions-1920x1080-1.jpg') no-repeat center center/ contain;  */
+    /* background: url('https://www.pngall.com/wp-content/uploads/9/Despicable-Me-PNG-Pic.png') no-repeat center center/ contain;  */
+    background: url('https://i.dlpng.com/static/png/5516399-minions-transparent-images-png-arts-minions-transparent-520_450_preview.png') no-repeat center center/ contain; 
 }
 
 .main > .container {
