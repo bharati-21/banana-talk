@@ -9,15 +9,36 @@ var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 btnTranslate.addEventListener("click", btnTranslateClick);
 function btnTranslateClick(e) {
-  console.log(userText.value);
-  const text = userText.value;
+  bananaText.innerHTML = "";
+  e.preventDefault();
 
+  console.log(userText.value);
+  let text = userText.value;
+  // if(text.indexOf("\n")!==-1) {
+  //   text = text.split("\n");
+  //   console.log(text);
+  //   for(let line in text) {
+  //     fetchFromURL(line);
+  //   }
+  // }
+  // else {
+    fetchFromURL(text);
+  // }
+}
+
+function fetchFromURL(text) {
   fetch(getTranslationURL(text))
-    .then((response) => response.json())
-    .then((json) => {
-      bananaText.innerHTML = json.contents.translated;
+    .then((response) => {
+      console.log(response);
+      response.json()
     })
-    .catch((err) => console.log("error occurred " + err));
+    .then((json) => {
+      bananaText.innerHTML += json.contents.translated;
+    })
+    .catch((err) => {
+      console.log("error occurred " + err)
+      alert('Sorry. Some error occurred! Try after sometime.');
+    });
 }
 
 function getTranslationURL(text) {
