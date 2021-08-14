@@ -12,7 +12,12 @@ function btnTranslateClick(e) {
   e.preventDefault();
 
   let text = userText.value; 
-  fetchFromURL(text);
+  if(text!=="") {
+    fetchFromURL(text);
+  }
+  else {
+    alert('Please enter text to be translated!');
+  }
 }
 
 function fetchFromURL(text) {
