@@ -77,13 +77,12 @@ body {
 .main {
     padding: 2rem;
     min-height: 70vh;
-    /* background: url('https://static.onecms.io/wp-content/uploads/sites/13/2015/10/16/despicable_me_2_minions-1920x1080-1.jpg') no-repeat center center/ contain;  */
-    /* background: url('https://www.pngall.com/wp-content/uploads/9/Despicable-Me-PNG-Pic.png') no-repeat center center/ contain;  */
     background: url('./assets/minion.png') no-repeat center center/ contain; 
 }
 
+
 .main > .container {
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -96,13 +95,17 @@ body {
 } */
 
 .main textarea {
-    overflow: scroll;
+    /* overflow: scroll; */
     width: 100%;
     display: block;
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-size: 1.3rem;
     padding: 1rem;
+    border-radius: 0.5rem;
+    color: #333;
+    font-weight: bold;
+    background-color: rgba(244, 244, 244, 0.7);
 }
 
 .main h3.section-head {
