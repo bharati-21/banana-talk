@@ -38,7 +38,6 @@ https://api.funtranslations.com/translate/minion.json?text=textToBeTranslated
 <hr />
 
 ## Challenges
-- Translating multiline text inputs from the user.
 - Handling errors from the API
 
   
