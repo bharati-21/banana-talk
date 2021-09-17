@@ -1,7 +1,8 @@
 # BANANA TALK
 
 ### This application translates English to minion lamguage using a translator API.
-Live demo of the application: https://bharati-banana-talk.netlify.app/
+[Live demo application](https://bharati-banana-talk.netlify.app/)
+
 <hr />
 
 ## PREREQUISITES
